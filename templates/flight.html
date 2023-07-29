@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="static\flight.css">
+    <title>Flight Fare Prediction</title>
+   
+
+</head>
+<body>
+    <div class="container">
+        <h1>Flight Fare Prediction</h1>
+        <form action="\predict" method="post">
+            <div class="form-group">
+                <label for="journey_day">Journey Day</label>
+                <input type="datetime-local" name="Dep_Time" id="Dep_Time" required="required">
+            </div>
+          <!--...   <div class="form-group">
+                <label for="departure_time">Departure Time</label>
+                <input type="time" id="departure_time" name="departure_time" placeholder="Enter departure time">
+            </div> -->
+            <div class="form-group">
+                <label for="duration">Duration of Flight</label>
+                <input type="text" id="duration" name="duration" placeholder="Enter in minutes only">
+            </div>
+            <div class="form-group">
+                <label for="airline">Airline</label>
+                <select id="airline" name="airline">
+                    <option value="Jet Airways">Jet Airways</option>
+                                <option value="IndiGo">IndiGo</option>
+                                <option value="Air India">Air India</option>
+                                <option value="Multiple carriers">Multiple carriers</option>
+                                <option value="SpiceJet">SpiceJet</option>
+                                <option value="Vistara">Vistara</option>
+                                <option value="Air Asia">Air Asia</option>
+                                <option value="GoAir">GoAir</option>
+                                <option value="Multiple carriers Premium economy">Multiple carriers Premium economy
+                                </option>
+                                <option value="Jet Airways Business">Jet Airways Business</option>
+                                <option value="Vistara Premium economy">Vistara Premium economy</option>
+                                <option value="Trujet">Trujet</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="source">Source</label>
+                <select id="source" name="source">
+                    <option value="Delhi">Delhi</option>
+                                <option value="Kolkata">Kolkata</option>
+                                <option value="Banglore">Banglore</option>
+                                <option value="Mumbai">Mumbai</option>
+                                <option value="Chennai">Chennai</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="destination">Destination</label>
+                <select id="destination" name="destination">
+                    <option value="Cochin">Cochin</option>
+                                <option value="Banglore">Banglore</option>
+                                <option value="Delhi">Delhi</option>
+                                <option value="New_Delhi">New Delhi</option>
+                                <option value="Hyderabad">Hyderabad</option>
+                                <option value="Kolkata">Kolkata</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="total_stops">Total Stops</label>
+                <select id="total_stops" name="total_stops">
+                    <option value="0">Non-Stop</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>    
+            </div>
+            <br>
+            <br>
+            <div class="form-group">
+                <input type="submit" value="Perdict Price">
+            </div>
+        </form>
+        <br>
+        <br>
+        <br>
+        <div class="output">
+        <h3>{{ prediction_text }} </h3>
+        </div>
+    </div>
+         <!--_ _ _ _ _Harish Sargar_ _ _ _ _-->
+</body>
+</html>
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,127 @@
+/* General styles for all screen sizes */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+    background-image: url('flight_7.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+}
+
+input[type="datetime-local"] {
+    background-color: rgba(117, 108, 108, 0.7);
+    border: 1px solid #ffffff;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-family: "Roboto Mono", monospace;
+}
+
+::placeholder {
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.container {
+    max-width: 40%;
+    margin: 30px auto;
+    margin-right: 650px;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+h1 {
+    text-align: center;
+    grid-column: 1 / -1;
+}
+
+.form-group {
+    margin-bottom: 17px;
+}
+
+/* _ _ _ _ _Harish Sargar_ _ _ _ _ */
+
+
+.form-group label {
+    font-weight: bold;
+    display: block;
+    color: #cdc2c2;
+    margin-bottom: 5px;
+}
+
+.form-group input[type="text"],
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: rgba(117, 108, 108, 0.7);
+}
+
+.form-group select {
+    appearance: none;
+    -webkit-appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg fill='none' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M7.293 13.293a1 1 0 011.414 0L12 16.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z' fill='%23242324'/%3E%3C/svg%3E");
+    background-position: right 10px center;
+    background-repeat: no-repeat;
+}
+
+.form-group input[type="submit"] {
+    background-color: rgba(111, 138, 235, 0.7);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    /* Adjust container width and margin for smaller screens */
+    .container {
+        max-width: 90%;
+        margin-right: 0;
+    }
+
+    /* Adjust grid layout for smaller screens */
+    .container {
+        grid-template-columns: 1fr; /* Single column layout */
+    }
+
+    /* Adjust background image size for smaller screens */
+    body {
+        background-size: contain;
+    }
+}
+
+.output{
+font-size: large;
+color: #f2f2f2;
+}
+
+header {
+    /* You can set a custom font family, or use the generic font names like 'serif', 'sans-serif', 'monospace', etc. */
+    font-style: oblique;
+}
+
+header h1 {
+    /* Additional styles for the h1 element inside the header */
+    font-size: 36px; /* You can adjust the font size to your preference */
+    font-weight: bold; /* You can set the font weight as 'bold', 'normal', or use numeric values */
+    color: #333; /* You can set the desired text color */
+    /* Add more CSS properties as needed */
+}
